@@ -17,9 +17,14 @@ def hit_target(x, y):
 # The Welcome
 print("Welcome to the treasure hunt?")
 
-target_x == int(input("Enter your x coordinate "))
+target_x = int(input("Enter your x coordinate "))
 
-target_y == int(input("Enter your y coordinate "))
+target_y = int(input("Enter your y coordinate "))
+
+if target_x == 50 and target_y == 40:
+    print("You hit")
+else:
+    print("You didn't hit it")
 
 # Where the Treasure is
 penup()
