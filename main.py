@@ -15,7 +15,7 @@ def hit_target(x, y):
 # write your pseudocode below
 
 # The Welcome
-print("Welcome to the treasure hunt")
+print("Welcome to the treasure hunt?")
 
 # Where the Treasure is
 penup()
