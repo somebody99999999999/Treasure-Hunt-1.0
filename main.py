@@ -37,18 +37,6 @@ else:
     pendown()
     circle(20)
 
-# Where the Treasure is
-    penup()
-    goto(x, y)
-    pendown()
-    color("yellow")
-    circle(20)
-    penup()
-
-# Back to the start
-# color("black")
-# goto(0, 0)
-
 
 # To keep the window open
 done()
