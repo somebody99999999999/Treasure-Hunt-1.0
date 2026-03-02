@@ -17,6 +17,10 @@ def hit_target(x, y):
 # The Welcome
 print("Welcome to the treasure hunt?")
 
+target_x == int(input("Enter your x coordinate "))
+
+target_y == int(input("Enter your y coordinate "))
+
 # Where the Treasure is
 penup()
 goto(50, 40)
@@ -26,8 +30,8 @@ circle(20)
 penup()
 
 # Back to the start
-color("black")
-goto(0, 0)
+# color("black")
+# goto(0, 0)
 
 
 # To keep the window open
