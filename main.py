@@ -10,29 +10,40 @@ target_range = 30   # How close they need to be
 
 # Function to Check Hit
 def hit_target(x, y):
-    return abs(50 - target_x) < target_range and abs(40 - target_y) < target_range
+    return abs(x - target_x) < target_range and abs(y - target_y) < target_range
 
 # write your pseudocode below
 
 # The Welcome
 print("Welcome to the treasure hunt?")
 
-target_x = int(input("Enter your x coordinate "))
+x = int(input("Enter your x coordinate "))
 
-target_y = int(input("Enter your y coordinate "))
+y = int(input("Enter your y coordinate "))
 
-if target_x == 50 and target_y == 40:
+if hit_target(x, y):
     print("You hit")
+    penup()
+    goto(x, y)
+    color("Yellow")
+    pendown()
+    circle(20)
+
 else:
     print("You didn't hit it")
+    penup()
+    goto(x, y)
+    color("Red")
+    pendown()
+    circle(20)
 
 # Where the Treasure is
-penup()
-goto(50, 40)
-pendown()
-color("yellow")
-circle(20)
-penup()
+    penup()
+    goto(x, y)
+    pendown()
+    color("yellow")
+    circle(20)
+    penup()
 
 # Back to the start
 # color("black")
