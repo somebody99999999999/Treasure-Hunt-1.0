@@ -16,6 +16,7 @@ def hit_target(x, y):
 
 # The Welcome
 print("Welcome to the treasure hunt?")
+print("Can you hit it?")
 
 x = int(input("Enter your x coordinate "))
 
