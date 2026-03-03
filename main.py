@@ -27,15 +27,24 @@ if hit_target(x, y):
     goto(x, y)
     color("Yellow")
     pendown()
-    circle(20)
-
+    begin_fill()
+    circle(20)  
+    end_fill()
+    penup()
+    forward(15)
+    hideturtle()
 else:
     print("You didn't hit it")
     penup()
     goto(x, y)
     color("Red")
     pendown()
-    circle(20)
+    begin_fill()
+    circle(20)  
+    end_fill()
+    penup()
+    forward(15)
+    hideturtle()
 
 
 # To keep the window open
